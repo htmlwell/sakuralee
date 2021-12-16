@@ -1,2 +1,0 @@
-# sakuralee-profile
-# sakula-master
