@@ -61,6 +61,7 @@ a {
     outline: none;
     font-size: 14px;
     font-weight: 700;
+
     &:hover,
     &:focus {
         @include trans-duration(500ms);
@@ -92,6 +93,7 @@ a {
     border-top-color: $bg-gray;
     @include animation(sonar 2400ms linear infinite);
     z-index: 999;
+
     &:before {
         content: "";
         position: absolute;
@@ -106,6 +108,7 @@ a {
         border-top-color: $bg-gray;
         @include animation(sonar 2700ms linear infinite);
     }
+
     &:after {
         content: "";
         position: absolute;
@@ -127,6 +130,7 @@ a {
         @include transform(rotate(0deg));
 
     }
+
     100% {
         @include transform(rotate(360deg));
     }
@@ -137,6 +141,7 @@ a {
         @include transform(rotate(0deg));
 
     }
+
     100% {
         @include transform(rotate(360deg));
     }
@@ -145,6 +150,7 @@ a {
 ul,
 ol {
     margin: 0;
+
     li {
         list-style: none;
     }
@@ -227,6 +233,7 @@ img {
 
 .mt-230 {
     margin-top: 230px;
+
     @media #{$breakpoint-xs} {
         margin-top: 100px;
     }
@@ -297,9 +304,11 @@ img {
     width: 70px;
     line-height: 66px;
     @include trans-duration(500ms);
+
     &:hover {
         background-color: $hover-color;
     }
+
     @media #{$breakpoint-md} {
         bottom: 30px;
         right: 30px;
@@ -307,6 +316,7 @@ img {
         width: 50px;
         line-height: 46px;
     }
+
     @media #{$breakpoint-xs} {
         bottom: 30px;
         right: 30px;
@@ -361,6 +371,7 @@ img {
     margin-bottom: 80px;
     position: relative;
     z-index: 1;
+
     .line {
         width: 100px;
         height: 1px;
@@ -368,17 +379,21 @@ img {
         margin-bottom: 30px;
         display: block;
     }
+
     h2 {
         font-size: 48px;
         margin-bottom: 0;
         font-weight: 100;
         line-height: 1.5;
+
         span {
             font-weight: 400;
         }
+
         @media #{$breakpoint-md} {
             font-size: 36px;
         }
+
         @media #{$breakpoint-xs} {
             font-size: 30px;
         }
@@ -400,30 +415,36 @@ img {
     line-height: 64px;
     padding: 0;
     background-color: $color-white;
+
     &:hover,
     &:focus {
         background-color: $heading-color;
         font-size: 12px;
         color: $color-white;
     }
+
     &.white-btn {
         border-color: $color-white;
         color: $color-white;
         background-color: transparent;
+
         &:hover,
         &:focus {
             background-color: $color-white;
             color: $heading-color;
         }
     }
+
     &.btn-2 {
         background-color: $heading-color;
         font-size: 12px;
         color: $color-white;
     }
+
     &.btn-3 {
         background-color: $bg-default;
         color: $color-white;
+
         &::before {
             position: absolute;
             width: 100%;
@@ -436,6 +457,7 @@ img {
             content: '';
             z-index: -100;
         }
+
         &:hover,
         &:focus {
             background-color: $bg-default;
@@ -447,6 +469,7 @@ img {
 .bg-overlay {
     position: relative;
     z-index: 1;
+
     &::after {
         position: absolute;
         z-index: -1;
@@ -463,6 +486,7 @@ img {
 .bg-overlay-black {
     position: relative;
     z-index: 1;
+
     &::after {
         position: absolute;
         z-index: 1;
@@ -479,6 +503,7 @@ img {
 .bg-overlay-white {
     position: relative;
     z-index: 1;
+
     &::after {
         position: absolute;
         z-index: -2;
@@ -498,6 +523,7 @@ img {
     left: 0;
     width: 100%;
     height: 60%;
+
     &::after {
         content: '';
         position: absolute;
@@ -517,13 +543,16 @@ img {
     width: 100%;
     height: 100%;
     z-index: -1;
+
     div {
         width: 1px;
         height: 100%;
         background-color: $grid-color;
+
         &:nth-child(5) {
             background-color: $grid5-color;
         }
+
         &:first-child,
         &:last-child {
             background-color: transparent;
@@ -543,36 +572,44 @@ img {
     @include trans-duration(500ms);
     background-color: transparent;
     padding: 15px 30px;
+
     .logo-area {
         a {
             color: $color-white;
             font-size: 36px;
             font-weight: 100;
+
             @media #{$breakpoint-xs} {
                 font-size: 24px;
             }
         }
     }
+
     .menu-content-area {
         .header-social-area {
             margin-right: 30px;
+
             a {
                 font-size: 18px;
                 padding: 0 10px;
                 color: $color-white;
+
                 @media #{$breakpoint-xs} {
                     padding: 0 5px;
                     font-size: 14px;
                 }
             }
+
             @media #{$breakpoint-xs} {
                 margin-right: 15px;
             }
         }
     }
+
     &.sticky {
         background-color: $bg-default;
     }
+
     @media #{$breakpoint-xs} {
         padding: 10px 0;
     }
@@ -596,6 +633,7 @@ img {
     padding: 50px 15px;
     @include trans-duration(800ms);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+
     .closeIcon {
         position: absolute;
         right: 50px;
@@ -605,42 +643,51 @@ img {
         font-size: 20px;
         cursor: pointer;
         @include trans-duration(750ms);
+
         &:hover {
             @include transform(rotate(180deg));
         }
+
         @media #{$breakpoint-xs} {
             right: 30px;
             top: 30px;
         }
     }
+
     .logo-area {
         a {
             color: $color-white;
             font-size: 30px;
             display: block;
             font-weight: 100;
+
             @media #{$breakpoint-xs} {
                 font-size: 24px;
             }
         }
     }
+
     .copywrite-text {
         p {
             margin-bottom: 0;
             color: $color-white;
+
             @media #{$breakpoint-xs} {
                 font-size: 14px;
             }
         }
+
         a {
             font-weight: 100;
             color: $color-white;
+
             &:hover,
             &:focus {
                 font-size: 14px;
             }
         }
     }
+
     .nav-link {
         color: $color-white;
         font-size: 18px;
@@ -648,10 +695,12 @@ img {
         z-index: 1;
         font-weight: 300;
         padding: 12px 15px;
+
         @media #{$breakpoint-xs} {
             font-size: 14px;
             padding: 10px;
         }
+
         &::after {
             content: '';
             bottom: 0;
@@ -664,6 +713,7 @@ img {
             z-index: 5;
             @include trans-duration(500ms);
         }
+
         &:hover,
         &:focus {
             &::after {
@@ -672,12 +722,15 @@ img {
             }
         }
     }
+
     @media #{$breakpoint-lg} {
         padding: 30px 15px;
     }
+
     @media #{$breakpoint-md} {
         padding: 30px 15px;
     }
+
     @media #{$breakpoint-xs} {
         padding: 15px;
         width: 300px;
@@ -701,12 +754,14 @@ img {
         @include trans-duration(800ms);
         overflow: visible;
         cursor: pointer;
+
         .hero-slides-content {
             position: relative;
             z-index: 1;
             @include transform(translateY(75%));
             @include trans-duration(800ms);
             bottom: 0;
+
             .line {
                 width: 100px;
                 height: 1px;
@@ -714,10 +769,12 @@ img {
                 margin-bottom: 30px;
                 display: block;
             }
+
             h2 {
                 color: $color-white;
                 font-weight: 100;
             }
+
             p {
                 color: $color-white;
                 margin-bottom: 0;
@@ -725,26 +782,33 @@ img {
                 margin-top: 140px;
             }
         }
+
         &:hover .hero-slides-content {
             @include transform(translateY(0%));
         }
+
         &:hover p {
             margin-top: 40px;
         }
+
         @media #{$breakpoint-lg} {
             height: 800px;
         }
+
         @media #{$breakpoint-md} {
             height: 700px;
         }
+
         @media #{$breakpoint-xs} {
             height: 550px;
         }
     }
+
     .owl-dots {
         position: absolute;
         left: 50px;
         bottom: 50px;
+
         .owl-dot {
             width: 8px;
             height: 8px;
@@ -752,6 +816,7 @@ img {
             margin: 0 5px;
             border-radius: 50%;
             display: inline-block;
+
             &.active {
                 border: 1px solid $color-white;
                 background-color: $color-white;
@@ -764,17 +829,21 @@ img {
 
 .portfolio-area {
     overflow-x: hidden;
+
     .portfolio-title {
         h2 {
             font-size: 56px;
             text-align: center;
             font-weight: 100;
+
             span {
                 font-weight: 400;
             }
+
             @media #{$breakpoint-md} {
                 font-size: 36px;
             }
+
             @media #{$breakpoint-xs} {
                 font-size: 30px;
             }
@@ -785,6 +854,7 @@ img {
 .single-portfolio-item {
     position: relative;
     z-index: 1;
+
     .backend-content {
         .dots {
             position: absolute;
@@ -792,6 +862,7 @@ img {
             top: -100px;
             left: -150px;
         }
+
         h2 {
             position: absolute;
             font-size: 230px;
@@ -799,34 +870,42 @@ img {
             z-index: -10;
             top: -170px;
             right: 40%;
+
             @media #{$breakpoint-lg} {
                 font-size: 170px;
                 top: -120px;
             }
+
             @media #{$breakpoint-md} {
                 font-size: 80px;
                 top: -50px;
             }
+
             @media #{$breakpoint-xs} {
                 font-size: 80px;
                 top: -50px;
             }
         }
     }
+
     .portfolio-meta {
         padding-top: 30px;
+
         p {
             font-weight: 500;
             font-size: 14px;
             margin-bottom: 5px;
         }
+
         h2 {
             font-size: 30px;
+
             @media #{$breakpoint-xs} {
                 font-size: 24px;
             }
         }
     }
+
     &.portfolio-item-2 {
         .backend-content {
             .dots {
@@ -838,6 +917,7 @@ img {
             }
         }
     }
+
     &.portfolio-item-3 {
         .backend-content {
             .dots {
@@ -846,28 +926,35 @@ img {
                 right: auto;
                 @include transform(rotate(90deg));
             }
+
             h2 {
                 top: -180px;
                 left: 30%;
                 right: auto;
+
                 @media #{$breakpoint-lg} {
                     top: -130px;
                 }
+
                 @media #{$breakpoint-md} {
                     top: -90px;
                     font-size: 100px;
                 }
+
                 @media #{$breakpoint-xs} {
                     top: -70px;
                 }
             }
         }
+
         @media #{$breakpoint-xs} {
             margin-bottom: 100px;
         }
     }
+
     &.portfolio-item-4 {
         top: -220px;
+
         .backend-content {
             .dots {
                 top: auto;
@@ -877,33 +964,41 @@ img {
                 @include transform(rotate(90deg));
             }
         }
+
         @media #{$breakpoint-xs} {
             top: 0;
             margin-bottom: 100px;
         }
     }
+
     &.portfolio-item-5 {
         top: -450px;
         height: 0;
+
         @media #{$breakpoint-xs} {
             top: 0;
             height: auto;
             margin-bottom: 100px;
         }
+
         @media #{$breakpoint-md} {
             top: -230px;
         }
     }
+
     &.portfolio-item-6 {
         top: 0;
         height: 0;
+
         @media #{$breakpoint-xs} {
             height: auto;
             margin-bottom: 100px;
         }
     }
+
     &.portfolio-item-7 {
         margin-top: 50px;
+
         .backend-content {
             .dots {
                 position: absolute;
@@ -913,13 +1008,16 @@ img {
                 left: auto;
                 right: -150px;
             }
+
             h2 {
                 top: -180px;
                 left: 30%;
                 right: auto;
+
                 @media #{$breakpoint-lg} {
                     top: -100px;
                 }
+
                 @media #{$breakpoint-xs} {
                     top: -60px;
                 }
@@ -932,26 +1030,33 @@ img {
 
 .call-to-action-content {
     text-align: center;
+
     h2 {
         font-weight: 100;
         font-size: 72px;
         margin-bottom: 15px;
+
         @media #{$breakpoint-lg} {
             font-size: 55px;
         }
+
         @media #{$breakpoint-md} {
             font-size: 36px;
         }
+
         @media #{$breakpoint-xs} {
             font-size: 30px;
         }
     }
+
     h5 {
         font-size: 48px;
         margin-bottom: 0;
+
         @media #{$breakpoint-md} {
             font-size: 30px;
         }
+
         @media #{$breakpoint-xs} {
             font-size: 24px;
         }
@@ -962,6 +1067,7 @@ img {
     position: relative;
     z-index: 1;
     overflow: hidden;
+
     .backEnd-content {
         h2 {
             position: absolute;
@@ -970,14 +1076,17 @@ img {
             z-index: -1;
             top: -30px;
             left: -3%;
+
             @media #{$breakpoint-lg} {
                 font-size: 170px;
                 top: 0;
             }
+
             @media #{$breakpoint-md} {
                 font-size: 150px;
                 top: 0;
             }
+
             @media #{$breakpoint-xs} {
                 font-size: 100px;
             }
@@ -991,23 +1100,28 @@ img {
     position: relative;
     z-index: 1;
     overflow: hidden;
+
     .copywrite-text {
         padding: 30px;
         text-align: center;
+
         p {
             font-weight: 300;
             margin-bottom: 0;
         }
+
         a {
             color: $text-color;
             font-weight: 300;
             font-size: 15px;
+
             &:hover,
             &:focus {
                 font-size: 15px;
             }
         }
     }
+
     .backEnd-content {
         .dots {
             position: absolute;
@@ -1015,6 +1129,7 @@ img {
             top: 0;
             z-index: -1;
         }
+
         h2 {
             position: absolute;
             font-size: 230px;
@@ -1022,13 +1137,16 @@ img {
             z-index: -1;
             top: -50px;
             left: -50px;
+
             @media #{$breakpoint-lg} {
                 font-size: 170px;
             }
+
             @media #{$breakpoint-md} {
                 font-size: 120px;
                 top: 0;
             }
+
             @media #{$breakpoint-xs} {
                 font-size: 80px;
                 top: 0;
@@ -1046,6 +1164,7 @@ img {
     z-index: 1;
     overflow: hidden;
     @include flex-wrap(wrap);
+
     .backEnd-content {
         .dots {
             position: absolute;
@@ -1063,14 +1182,17 @@ img {
         min-width: 50%;
         position: relative;
         z-index: 1;
+
         @media #{$breakpoint-xs} {
             @include flex(0 0 100%);
             min-width: 100%;
         }
     }
+
     .hero-content {
         height: 880px;
         padding: 100px 0;
+
         .line {
             width: 100px;
             height: 1px;
@@ -1078,34 +1200,43 @@ img {
             margin-bottom: 30px;
             display: block;
         }
+
         h2 {
             color: $color-white;
             font-size: 48px;
             margin-bottom: 25px;
+
             @media #{$breakpoint-lg} {
                 font-size: 40px;
             }
+
             @media #{$breakpoint-md} {
                 font-size: 30px;
             }
+
             @media #{$breakpoint-xs} {
                 font-size: 30px;
             }
         }
+
         p {
             color: $color-white;
             margin-bottom: 30px;
         }
+
         &.aboutUs {
             height: 1100px;
+
             @media #{$breakpoint-xs} {
                 height: auto;
             }
         }
+
         @media #{$breakpoint-xs} {
             height: auto;
         }
     }
+
     .hero-thumbnail {
         &.aboutUs {
             &::before {
@@ -1117,11 +1248,13 @@ img {
                 background-color: $color-white;
                 content: '';
                 z-index: 1;
+
                 @media #{$breakpoint-xs} {
                     display: none;
                 }
             }
         }
+
         @media #{$breakpoint-xs} {
             height: 400px;
         }
@@ -1134,13 +1267,16 @@ img {
     position: relative;
     z-index: 1;
     margin-bottom: 50px;
+
     img {
         margin-bottom: 20px;
     }
+
     h4 {
         font-size: 28px;
         margin-bottom: 40px;
     }
+
     p {
         margin-bottom: 0;
     }
@@ -1153,6 +1289,7 @@ img {
     z-index: 1;
     padding: 70px 0;
     margin: 0 50px;
+
     &::before {
         position: absolute;
         width: 20%;
@@ -1162,35 +1299,42 @@ img {
         background-color: $color-white;
         content: '';
     }
+
     .testimonial-content {
         padding: 100px 80px 100px 200px;
         position: relative;
         z-index: 1;
         left: -15px;
         box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.15);
+
         @media #{$breakpoint-lg} {
             padding: 100px 80px 100px 130px;
         }
+
         @media #{$breakpoint-xs} {
             padding: 50px 15px 50px 15px;
         }
     }
+
     .single-tes-slide {
         p {
             margin-bottom: 40px;
             font-style: italic;
         }
+
         h6 {
             margin-bottom: 0;
             font-style: italic;
         }
     }
+
     .owl-dots {
         position: absolute;
         top: 0;
         left: -100px;
         z-index: 10;
         @include transform(translateY(-50%));
+
         .owl-dot {
             width: 8px;
             height: 8px;
@@ -1198,21 +1342,26 @@ img {
             border-radius: 50%;
             margin: 8px 0;
             display: block;
+
             &.active {
                 border-color: $bg-default;
                 background-color: $bg-default;
             }
         }
+
         @media #{$breakpoint-lg} {
             top: 20%;
         }
+
         @media #{$breakpoint-md} {
             top: 30%;
         }
+
         @media #{$breakpoint-xs} {
             display: none;
         }
     }
+
     @media #{$breakpoint-xs} {
         margin: 0 15px;
     }
@@ -1224,18 +1373,23 @@ img {
     position: relative;
     z-index: 1;
     padding: 100px 35px 50px;
+
     .single_gallery_item {
         position: relative;
         z-index: 1;
         margin-bottom: 50px;
+
         .gallery-content {
             padding-top: 30px;
+
             h4 {
                 margin-bottom: 10px;
+
                 @media #{$breakpoint-xs} {
                     font-size: 20px;
                 }
             }
+
             p {
                 margin-bottom: 0;
             }
@@ -1249,6 +1403,7 @@ img {
     right: 0;
     width: 50%;
     z-index: 100;
+
     .btn {
         padding: 5px 0;
         border: none;
@@ -1258,25 +1413,31 @@ img {
         color: $color-white;
         border-radius: 0;
         margin: 0 20px;
+
         &.active {
             border-color: $color-white;
         }
+
         &:hover,
         &:focus {
             box-shadow: none;
         }
+
         @media #{$breakpoint-lg} {
             margin: 0 10px;
         }
+
         @media #{$breakpoint-md} {
             margin: 0 5px;
             font-size: 14px;
         }
+
         @media #{$breakpoint-xs} {
             margin: 0 5px;
             font-size: 14px;
         }
     }
+
     @media #{$breakpoint-xs} {
         width: 100%;
         bottom: 20px;
@@ -1290,6 +1451,7 @@ img {
     position: relative;
     z-index: 1;
     overflow: hidden;
+
     .backEnd-content {
         .dots {
             position: absolute;
@@ -1302,9 +1464,11 @@ img {
 .single-blog-area {
     position: relative;
     z-index: 1;
+
     .blog-post-thumbnail {
         position: relative;
         z-index: 1;
+
         .post-date {
             a {
                 position: absolute;
@@ -1319,6 +1483,7 @@ img {
                 text-align: center;
                 line-height: 2;
                 font-size: 15px;
+
                 &:hover,
                 &:focus {
                     font-weight: 100;
@@ -1327,24 +1492,30 @@ img {
             }
         }
     }
+
     .post-content {
         padding-top: 60px;
+
         .headline {
             font-size: 28px;
             margin-bottom: 5px;
             font-weight: 300;
             color: $heading-color;
+
             &:hover,
             &:focus {
                 font-weight: 300;
             }
         }
+
         .post-meta {
             margin-bottom: 50px;
+
             a {
                 font-size: 12px;
                 font-weight: 500;
                 color: $heading-color;
+
                 &:hover,
                 &:focus {
                     font-size: 12px;
@@ -1352,6 +1523,7 @@ img {
                 }
             }
         }
+
         p {
             margin-bottom: 0;
         }
@@ -1362,6 +1534,7 @@ img {
     form {
         position: relative;
         z-index: 1;
+
         input {
             width: 100%;
             height: 42px;
@@ -1373,6 +1546,7 @@ img {
             padding: 0 15px;
             background-color: transparent;
         }
+
         button {
             width: 50px;
             height: 42px;
@@ -1392,6 +1566,7 @@ img {
     h6 {
         margin-bottom: 15px;
     }
+
     .catagories-menu {
         li {
             a {
@@ -1409,20 +1584,24 @@ img {
     h6 {
         margin-bottom: 25px;
     }
+
     .widget-single-blog-post {
         margin-bottom: 30px;
+
         .widget-post-content {
             a {
                 font-size: 15px;
                 color: $heading-color;
                 margin-bottom: 5px;
                 font-weight: 300;
+
                 &:hover,
                 &:focus {
                     font-size: 15px;
                     font-weight: 300;
                 }
             }
+
             p {
                 font-size: 12px;
                 margin-bottom: 0;
@@ -1438,29 +1617,37 @@ img {
         font-size: 72px;
         margin-bottom: 15px;
         font-weight: 100;
+
         @media #{$breakpoint-lg} {
             font-size: 55px;
         }
+
         @media #{$breakpoint-md} {
             font-size: 36px;
         }
+
         @media #{$breakpoint-xs} {
             font-size: 30px;
         }
     }
+
     h4 {
         font-size: 48px;
         margin-bottom: 80px;
+
         @media #{$breakpoint-md} {
             font-size: 30px;
         }
+
         @media #{$breakpoint-xs} {
             font-size: 24px;
         }
     }
+
     .form-group {
         margin-bottom: 30px;
     }
+
     .form-control {
         width: 100%;
         height: 60px;
@@ -1473,13 +1660,16 @@ img {
         font-style: italic;
         color: $heading-color;
         background-color: transparent;
+
         &:focus,
         &:hover {
             box-shadow: none;
         }
     }
+
     textarea {
         margin-bottom: 50px;
+
         &.form-control {
             height: 220px;
             padding: 15px;
@@ -1491,13 +1681,16 @@ img {
     position: relative;
     z-index: 1;
     margin: 0 50px;
+
     #googleMap {
         width: 100%;
         height: 540px;
+
         @media #{$breakpoint-xs} {
             height: 400px;
         }
     }
+
     @media #{$breakpoint-xs} {
         margin: 0 20px;
     }
@@ -1510,6 +1703,7 @@ img {
     z-index: 1;
     padding: 120px 0;
     overflow: hidden;
+
     &::after {
         content: "";
         width: 50%;
@@ -1520,9 +1714,11 @@ img {
         position: absolute;
         z-index: -5;
     }
+
     &.second-part {
         position: relative;
         padding: 120px 0;
+
         &::after {
             content: "";
             width: 50%;
@@ -1535,21 +1731,26 @@ img {
             z-index: -5;
         }
     }
+
     .about-us-content {
         padding: 15px 100px 100px;
         margin-left: 100px;
+
         @media #{$breakpoint-lg} {
             padding: 15px 30px 100px;
             margin-left: 50px;
         }
+
         @media #{$breakpoint-md} {
             margin-left: 0;
         }
+
         @media #{$breakpoint-xs} {
             margin-left: 0;
             padding: 15px 20px 100px;
         }
     }
+
     .backEnd-content {
         h2 {
             position: absolute;
@@ -1558,43 +1759,53 @@ img {
             z-index: -1;
             top: -130px;
             left: -10%;
+
             @media #{$breakpoint-lg} {
                 font-size: 170px;
                 top: -90px;
             }
+
             @media #{$breakpoint-md} {
                 font-size: 100px;
                 top: -30px;
                 left: -5%;
             }
+
             @media #{$breakpoint-xs} {
                 font-size: 60px;
                 top: 0;
             }
         }
     }
+
     &.second-part {
         overflow: hidden;
+
         .about-us-content {
             padding: 100px;
             margin-left: 0;
             margin-right: 100px;
+
             @media #{$breakpoint-lg} {
                 margin-right: 0;
             }
+
             @media #{$breakpoint-md} {
                 margin-right: 0;
             }
+
             @media #{$breakpoint-xs} {
                 margin-right: 0;
                 padding: 100px 20px 70px;
             }
         }
+
         .backEnd-content {
             h2 {
                 top: -100px;
                 left: auto;
                 right: -50px;
+
                 @media #{$breakpoint-md} {
                     font-size: 100px;
                     top: 0;
@@ -1613,9 +1824,11 @@ img {
         text-transform: capitalize;
         font-size: 48px;
         margin-bottom: 100px;
+
         @media #{$breakpoint-md} {
             font-size: 30px;
         }
+
         @media #{$breakpoint-xs} {
             font-size: 28px;
         }
@@ -1632,12 +1845,15 @@ img {
         box-shadow: 0 0 0 transparent;
         margin-bottom: 15px;
     }
+
     &:last-of-type {
         margin-bottom: 0;
     }
+
     h6 {
         margin-bottom: 0;
         text-transform: uppercase;
+
         a {
             background-color: #1d1d1d;
             border-radius: 0;
@@ -1649,27 +1865,32 @@ img {
             font-size: 14px;
             text-transform: capitalize;
             font-weight: 500;
+
             span {
                 font-size: 10px;
                 position: absolute;
                 right: 20px;
                 text-align: center;
                 top: 24px;
+
                 &.accor-open {
                     opacity: 0;
                     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
                     filter: alpha(opacity=0);
                 }
             }
+
             &.collapsed {
                 background-color: $primary-color;
                 color: $color-white;
+
                 span {
                     &.accor-close {
                         opacity: 0;
                         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
                         filter: alpha(opacity=0);
                     }
+
                     &.accor-open {
                         opacity: 1;
                         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -1679,9 +1900,11 @@ img {
             }
         }
     }
+
     .accordion-content {
         border-top: 0 solid transparent;
         box-shadow: none;
+
         p {
             padding: 20px 15px 5px;
             margin-bottom: 0;
@@ -1693,19 +1916,23 @@ img {
 
 .single-cool-fact-area {
     text-align: center;
+
     i {
         font-size: 100px;
         color: $primary-color;
         margin-bottom: 30px;
         display: block;
     }
+
     img {
         margin-bottom: 30px;
     }
+
     h2 {
         font-size: 48px;
         margin-bottom: 5px;
     }
+
     p {
         margin-bottom: 0;
     }
@@ -1715,13 +1942,16 @@ img {
 
 .single_progress_bar {
     margin-bottom: 20px;
+
     &:last-of-type {
         margin-bottom: 0;
     }
+
     p {
         margin-bottom: 0;
 
     }
+
     .barfiller {
         background-color: #e0e0e0;
         border: none;
@@ -1731,6 +1961,7 @@ img {
         margin-bottom: 5px;
         position: relative;
         width: 100%;
+
         .fill {
             display: block;
             position: relative;
@@ -1739,6 +1970,7 @@ img {
             background-color: #1d1d1d;
             z-index: 1;
         }
+
         .tip {
             margin-top: 10px;
             font-size: 14px;
@@ -1752,6 +1984,7 @@ img {
             text-align: center;
             line-height: 32px;
         }
+
         .tipWrap {
             display: none;
         }
@@ -1764,6 +1997,7 @@ img {
         font-weight: 300;
         color: $heading-color;
     }
+
     @media #{$breakpoint-xs} {
         margin-bottom: 30px;
     }
