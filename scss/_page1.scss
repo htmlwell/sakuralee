@@ -1,4 +1,7 @@
-
-.hero-area{
+.hero-area {
     height: 100vh;
+
+    @media #{$breakpoint-md} {
+        height: auto;
+    }
 }
