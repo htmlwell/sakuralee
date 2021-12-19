@@ -2,6 +2,7 @@
     height: 100vh;
 
     @media screen and (max-width: 768px) {
+        // height: 600px;
         height: auto;
     }
 
@@ -9,4 +10,36 @@
 
 .mfp-image-holder .mfp-content {
     max-width: 80%;
+
+}
+
+.text-md {
+    font-size: 25px !important;
+    margin-bottom: 10px !important;
+}
+
+.logo-area {
+    padding-top: 10px;
+
+    a {
+        font-size: 25px !important;
+        font-weight: 500 !important;
+        letter-spacing: 3px;
+    }
+}
+
+.about-text {
+    height: 300px !important;
+    display: block !important;
+    color: #fff !important;
+    line-height: 2em !important;
+    font-weight: 100 !important;
+}
+
+.index-bg-color {
+    background-color: $bg-default !important;
+}
+
+.hero-area .hero-thumbnail.aboutUs.about-before::before {
+    display: none;
 }
