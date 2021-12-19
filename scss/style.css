@@ -556,10 +556,6 @@ img {
   background-color: #e0e3e4;
 }
 
-.grids div:nth-child(5) {
-  background-color: #bababa;
-}
-
 .grids div:first-child, .grids div:last-child {
   background-color: transparent;
 }
