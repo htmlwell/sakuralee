@@ -307,7 +307,7 @@ img {
 }
 
 #scrollUp:hover {
-  background-color: #192a56;
+  background-color: #b69460;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -553,7 +553,7 @@ img {
 .grids div {
   width: 1px;
   height: 100%;
-  background-color: #e0e3e4;
+  background-color: #f5e7d1;
 }
 
 .grids div:first-child, .grids div:last-child {
@@ -710,6 +710,10 @@ img {
   padding: 12px 15px;
 }
 
+.mainMenu .nav-link:hover {
+  color: #c6ac83;
+}
+
 @media only screen and (max-width: 767px) {
   .mainMenu .nav-link {
     font-size: 14px;
@@ -734,7 +738,7 @@ img {
 
 .mainMenu .nav-link:hover::after, .mainMenu .nav-link:focus::after {
   width: 70px;
-  background-color: white;
+  background-color: #f5e7d1;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2099,10 +2103,6 @@ img {
 }
 
 /* The end */
-.hero-area {
-  height: 100vh;
-}
-
 @media screen and (max-width: 768px) {
   .hero-area {
     height: auto;
@@ -2142,5 +2142,22 @@ img {
 
 .hero-area .hero-thumbnail.aboutUs.about-before::before {
   display: none;
+}
+
+.gallery-content h4 {
+  font-weight: 400;
+}
+
+.gallery-content h4 + p {
+  font-weight: 400;
+}
+
+.win-color {
+  color: #936329;
+  font-weight: 400;
+}
+
+.text-md.color-b {
+  color: #c6ac83 !important;
 }
 /*# sourceMappingURL=style.css.map */

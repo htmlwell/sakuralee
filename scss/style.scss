@@ -688,6 +688,8 @@ img {
         }
     }
 
+
+
     .nav-link {
         color: $color-white;
         font-size: 18px;
@@ -695,6 +697,10 @@ img {
         z-index: 1;
         font-weight: 300;
         padding: 12px 15px;
+
+        &:hover {
+            color: lighten($hover-color, 10%); //$grid-color;
+        }
 
         @media #{$breakpoint-xs} {
             font-size: 14px;
@@ -718,7 +724,7 @@ img {
         &:focus {
             &::after {
                 width: 70px;
-                background-color: rgba(255, 255, 255, 1);
+                background-color: $grid-color; //rgba(255, 255, 255, 1);
             }
         }
     }

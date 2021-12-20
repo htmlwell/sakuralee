@@ -1,5 +1,6 @@
 .hero-area {
-    height: 100vh;
+    // height: 100vh;
+    // overflow: scroll;
 
     @media screen and (max-width: 768px) {
 
@@ -42,4 +43,23 @@
 
 .hero-area .hero-thumbnail.aboutUs.about-before::before {
     display: none;
+}
+
+.gallery-content {
+    h4 {
+        font-weight: 400;
+
+        +p {
+            font-weight: 400;
+        }
+    }
+}
+
+.win-color {
+    color: rgb(147, 99, 41);
+    font-weight: 400;
+}
+
+.text-md.color-b {
+    color: lighten($hover-color, 10%) !important;
 }
